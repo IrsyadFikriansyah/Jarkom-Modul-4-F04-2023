@@ -158,39 +158,79 @@
 ![cidr-tree](images/CIDR-tree.jpg)
 
 ### Pembagian Subnet CIDR
-- Iterasi 1
+#### Iterasi 1
+- Tabel
+
+![cidr-sub-8](images/CIDR-sub-8.png)
+
+- Grafik
 
 ![cidr-1](images/CIDR-1.jpg)
 
-- Iterasi 2
+#### Iterasi 2
+- Tabel
+
+![cidr-sub-1](images/CIDR-sub-1.png)
+
+- Grafik
 
 ![cidr-2](images/CIDR-2.jpg)
 
-- Iterasi 3
+#### Iterasi 3
+- Tabel
+
+![cidr-sub-2](images/CIDR-sub-2.png)
+
+- Grafik
 
 ![cidr-3](images/CIDR-3.jpg)
 
-- Iterasi 4
+#### Iterasi 4
+- Tabel
+
+![cidr-sub-3](images/CIDR-sub-3.png)
+
+- Grafik
 
 ![cidr-4](images/CIDR-4.jpg)
 
-- Iterasi 5
+#### Iterasi 5
+- Tabel
+
+![cidr-sub-4](images/CIDR-sub-4.png)
+
+- Grafik
 
 ![cidr-5](images/CIDR-5.jpg)
 
-- Iterasi 6
+#### Iterasi 6
+- Tabel
+
+![cidr-sub-5](images/CIDR-sub-5.png)
+
+- Grafik
 
 ![cidr-6](images/CIDR-6.jpg)
 
-- Iterasi 7
+#### Iterasi 7
+- Tabel
+
+![cidr-sub-6](images/CIDR-sub-6.png)
+
+- Grafik
 
 ![cidr-7](images/CIDR-7.jpg)
 
-- Iterasi 8
+#### Iterasi 8
+- Tabel
+
+![cidr-sub-7](images/CIDR-sub-7.png)
+
+- Grafik
 
 ![cidr-8](images/CIDR-8.jpg)
 
 ### Pembagian IP CIDR
 
-![cidr-ip](images/CIDR-ip.jpg)
+![cidr-ip](images/CIDR-ip.png)
 
