@@ -9,6 +9,8 @@
 |----------|-----------|
 | F04      | 192.223   |
 
+Link spreadsheet perhitungan: <a href="https://docs.google.com/spreadsheets/d/1s6zThFMjVH1S3RKcH4FeIohUp0uV10fMOSu2JvUXQek/edit?usp=sharing">sheet</a>
+
 ## Topologi
 
 ![topologi](images/topologi.png)
