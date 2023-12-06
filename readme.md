@@ -154,3 +154,43 @@
 
 ## CIDR - GNS3
 
+### CIDR Tree
+![cidr-tree](images/CIDR-tree.jpg)
+
+### Pembagian Subnet CIDR
+- Iterasi 1
+
+![cidr-1](images/CIDR-1.jpg)
+
+- Iterasi 2
+
+![cidr-2](images/CIDR-2.jpg)
+
+- Iterasi 3
+
+![cidr-3](images/CIDR-3.jpg)
+
+- Iterasi 4
+
+![cidr-4](images/CIDR-4.jpg)
+
+- Iterasi 5
+
+![cidr-5](images/CIDR-5.jpg)
+
+- Iterasi 6
+
+![cidr-6](images/CIDR-6.jpg)
+
+- Iterasi 7
+
+![cidr-7](images/CIDR-7.jpg)
+
+- Iterasi 8
+
+![cidr-8](images/CIDR-8.jpg)
+
+### Pembagian IP CIDR
+
+![cidr-ip](images/CIDR-ip.jpg)
+
