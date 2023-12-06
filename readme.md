@@ -189,3 +189,8 @@
 - Iterasi 8
 
 ![cidr-8](images/CIDR-8.jpg)
+
+### Pembagian IP CIDR
+
+![cidr-ip](images/CIDR-ip.jpg)
+
