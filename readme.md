@@ -380,7 +380,7 @@ auto eth0
 iface eth0 inet static
 address 192.224.1.2
 netmask 255.255.255.252
-gateway 192.225.1.1
+gateway 192.224.1.1
 
 auto eth1
 iface eth1 inet static
@@ -554,7 +554,7 @@ gateway 192.223.4.1
 ```
 auto eth0
 iface eth0 inet static
-address 192.223.4.3
+address 192.223.4.2
 netmask 255.255.255.192
 gateway 192.223.4.1
 
@@ -580,4 +580,44 @@ iface eth0 inet static
 address 192.223.0.3
 netmask 255.255.252.0
 gateway 192.223.0.1
+```
+
+### Konfigurasi Routing GNS CIDR
+- Aura (router)
+```
+route add -net 192.225.0.0 netmask 255.255.0.0 gw 192.225.128.2
+route add -net 192.224.0.0 netmask 255.255.254.0 gw 192.224.1.2
+route add -net 192.223.0.0 netmask 255.255.0.0 gw 192.223.128.2
+```
+
+- Frieren (router)
+```
+route add -net 192.225.0.0 netmask 255.255.128.0 gw 192.225.32.2
+```
+
+- Flamme (router)
+```
+route add -net 192.225.16.0 netmask 255.255.248.0 gw 192.225.20.10
+route add -net 192.225.0.0 netmask 255.255.224.0 gw 192.225.8.2
+```
+
+- Lugner (router)
+```
+route add -net 192.223.0.0 netmask 255.255.224.0 gw 192.223.72.1
+```
+
+- Eisen (router)
+```
+route add -net 192.223.64.0 netmask 255.255.240.0 gw 192.223.72.2
+route add -net 192.223.0.0 netmask 255.255.192.0 gw 192.223.32.2
+```
+
+- Linie (router)
+```
+route add -net 192.223.0.0 netmask 255.255.224.0 gw 192.223.8.2
+```
+
+- Lawine (router)
+```
+route add -net 192.223.0.0 netmask 255.255.248.0 gw 192.223.4.3
 ```
