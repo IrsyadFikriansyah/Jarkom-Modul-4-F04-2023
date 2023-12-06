@@ -236,3 +236,348 @@ Link spreadsheet perhitungan: <a href="https://docs.google.com/spreadsheets/d/1s
 
 ![cidr-ip](images/CIDR-ip.png)
 
+### Konfigurasi IP GNS CIDR
+- Aura (router)
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+address 192.225.128.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.223.128.1
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 192.224.1.1
+netmask 255.255.255.252
+```
+
+- Frieren (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.1.2
+netmask 255.255.255.252
+gateway 192.225.1.1
+
+auto eth1
+iface eth1 inet static
+address 192.225.64.1
+netmask 255.255.255.224
+
+auto eth2
+iface eth2 inet static
+address 192.225.32.1
+netmask 255.255.255.252
+```
+
+- LakeKorridor (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.64.2
+netmask 255.255.255.224
+gateway 192.225.64.1
+```
+
+- Flamme (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.32.2
+netmask 255.255.255.252
+gateway 192.225.32.1
+
+auto eth1
+iface eth1 inet static
+address 192.225.8.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.225.20.9
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 192.225.16.1
+netmask 255.255.252.0
+```
+
+- Himmel (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.20.10
+netmask 255.255.255.252
+gateway 192.225.20.9
+
+auto eth1
+iface eth1 inet static
+address 192.225.20.1
+netmask 255.255.255.248
+```
+
+- Fern (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.8.2
+netmask 255.255.255.252
+gateway 192.225.8.1
+
+auto eth1
+iface eth1 inet static
+address 192.225.0.1
+netmask 255.255.248.0
+```
+
+- RohrRoad (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.16.2
+netmask 255.255.252.0
+gateway 192.225.16.1
+```
+
+- SchwerMountains (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.20.2
+netmask 255.255.255.248
+gateway 192.225.20.1
+```
+
+- LaubHills (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.0.2
+netmask 255.255.248.0
+gateway 192.225.0.1
+```
+
+- AppetitRegion (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.225.0.3
+netmask 255.255.248.0
+gateway 192.225.0.1
+```
+
+- Denken (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.224.1.2
+netmask 255.255.255.252
+gateway 192.225.1.1
+
+auto eth1
+iface eth1 inet static
+address 192.224.0.1
+netmask 255.255.255.0
+```
+
+- WillieRegion (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.224.0.2
+netmask 255.255.255.0
+gateway 192.224.0.1
+```
+
+- RoyalCapital (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.224.0.3
+netmask 255.255.255.0
+gateway 192.224.0.1
+```
+
+- Eisen (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.128.2
+netmask 255.255.255.252
+gateway 192.223.128.1
+
+auto eth1
+iface eth1 inet static
+address 192.223.80.1
+netmask 255.255.255.248
+
+auto eth2
+iface eth2 inet static
+address 192.223.32.1
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 192.223.80.9
+netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+address 192.223.72.1
+netmask 255.255.255.252
+```
+
+- Revolte (server)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.80.2
+netmask 255.255.255.248
+gateway 192.223.80.1
+```
+
+- Richter (server)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.80.3
+netmask 255.255.255.248
+gateway 192.223.80.1
+```
+
+- Stark (server)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.80.10
+netmask 255.255.255.252
+gateway 192.223.80.9
+```
+
+- Lugner (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.72.2
+netmask 255.255.255.252
+gateway 192.223.72.1
+
+auto eth1
+iface eth1 inet static
+address 192.223.64.1
+netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+address 192.223.68.1
+netmask 255.255.255.0
+```
+
+- GrobeForest (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.68.2
+netmask 255.255.255.0
+gateway 192.223.68.1
+```
+
+- TurkRegion (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.64.2
+netmask 255.255.255.0
+gateway 192.223.64.1
+```
+
+- Linie (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.32.2
+netmask 255.255.255.252
+gateway 192.223.32.1
+
+auto eth1
+iface eth1 inet static
+address 192.223.8.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.223.16.1
+netmask 255.255.254.0
+```
+
+- GranzChannel (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.16.2
+netmask 255.255.254.0
+gateway 192.223.16.1
+```
+
+- Lawine (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.8.2
+netmask 255.255.255.252
+gateway 192.223.8.1
+
+auto eth1
+iface eth1 inet static
+address 192.223.4.1
+netmask 255.255.255.192
+```
+
+- BredtRegion (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.4.3
+netmask 255.255.255.192
+gateway 192.223.4.1
+```
+
+- Heiter (router)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.4.3
+netmask 255.255.255.192
+gateway 192.223.4.1
+
+auto eth1
+iface eth1 inet static
+address 192.223.0.1
+netmask 255.255.252.0
+```
+
+- RiegelCanyon (client)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.0.2
+netmask 255.255.252.0
+gateway 192.223.0.1
+```
+
+- Sein (server)
+```
+auto eth0
+iface eth0 inet static
+address 192.223.0.3
+netmask 255.255.252.0
+gateway 192.223.0.1
+```
